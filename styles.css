@@ -1,0 +1,681 @@
+:root {
+    --thistle: thistle;
+    --dimgray: dimgray;
+    --light: rgb(239, 239, 239);
+    --white: white;
+    --black: black;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BODY */
+
+body {
+  max-width: 100vw;
+  height: auto;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 70px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.logo-name > p.kth {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.fa-k {
+  color: var(--thistle);
+  background: black;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.links {
+  margin-right: 2rem;
+}
+
+.links > a{
+  margin-right: .5rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 390px;
+}
+
+.program {
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.503)), url(/imgs/lapi1000.jpeg);
+  background-position: center;
+  background-size: cover;
+ 
+}
+
+.program > h1 {
+  color: var(--thistle);
+  font-size: 40px;
+  border-left: 10px solid thistle;
+
+}
+
+.program > h1, p.info, button.our-work {
+  margin: 2.5rem 3rem 0 8rem;
+  
+}  
+
+.program > p.info {
+  color: white;
+  line-height: 1.5;
+} 
+
+.program > button {
+  width: 180px;
+  height: 45px;
+  border: 0;
+  border-radius: 25px;
+  background: var(--thistle);
+  color: var(--black);
+}
+
+.our-services {
+  width: 30%;
+  height: 100%;
+  background: var(--thistle);
+  margin: auto;
+
+}
+
+h2 {
+  margin: 20px 0 0 25px;
+}
+
+.dev {
+  display: flex;
+  padding: 17px;
+}
+
+.dev > .fa-solid {
+  margin-right: 1rem;
+  margin-buttom: 1rem;
+}
+
+.dev-details > p:first-child {
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dev-details > p:last-child {
+  font-size: 6px;
+  color: white;
+}
+
+.fa-brands {
+  margin-right: 10px;
+  color: white;
+}
+
+/* ARTICLE */
+
+article {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article > p:first-child {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+article > p.get-in-t > button {
+  height: 40px;
+  width: 170px;
+  background: transparent;
+  color: var(--thistle);
+  border: solid 1px lightslategray;
+  /* box-shadow: 1px 1px 1px 1px; */
+}
+
+/* SECTION */
+
+section {
+  display: flex;
+  width: 100%;
+  height: 570px;
+  background: var(--light);
+}
+
+.left-image {
+  width: 30%;
+  height: 100%;
+  background-image: url(/imgs/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.no-project {
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10 1fr);
+  grid-template-rows: 20% 65% 15%;
+  
+} 
+
+
+ .big-or-small > p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+ .no-project > .project-text {
+  display: flex;
+  text-align: left;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+  gap: 3rem;
+} 
+
+.no-project > .project-text >.project-first-text > p {
+  line-height: 1.5;
+} 
+
+ .no-project > .project-text >.project-second-text > p {
+  line-height: 1.5;
+} 
+
+.no-project > .project-text >.project-second-text > button {
+  height: 40px;
+  width: 170px;
+  background: transparent;
+  border: solid 4px black;
+  font-weight: bold;
+} 
+
+.years-completed {
+  background: red;
+  display: flex;
+} 
+
+.years {
+  width: 50%;
+  background: var(--thistle);
+  text-align: center;
+} 
+
+.years > p:first-child {
+  font-size: 25px;
+  font-weight: bold;
+  margin: .8rem 0 .5rem 0;
+} 
+
+.completed {
+  width: 50%;
+  background: var(--black);
+  text-align: center;
+  color: white;
+} 
+
+.completed > p:first-child {
+  font-size: 25px;
+  font-weight: bold;
+  margin: .8rem 0 .5rem 0;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 4rem;
+  /* text-align: center; */
+} 
+
+main > p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+/* PROJECT-IMAGE-CONTAINER */
+
+.project-image-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-image:first-child {
+  width: 250px;
+  height: 150px;
+  background-image: url(/imgs/7.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.project-image:nth-child(2) {
+  width: 250px;
+  height: 150px;
+  background-image: url(/imgs/dark.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.project-image:last-child {
+  width: 250px;
+  height: 150px;
+  background-image: url(/imgs/8.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* PROJECT-TITLE-CONTAINER */
+
+.project-title-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  width: 250px;
+  height: 350px;
+  border: solid 1px black;
+  padding: 1.5rem;
+}
+
+.project-title > p:first-child {
+  font-weight: bold;
+  margin: 1rem 0 1rem 0;
+}
+
+.project-title > p:nth-child(2){
+  line-height: 1.5;
+  margin-bottom: 5rem;
+  color: lightslategray;
+  
+}
+
+.project-title > button {
+  width: 150px;
+  height: 27px;
+  background: transparent;
+  cursor: pointer;
+  border: solid 2px black;
+}
+
+.project-title > button:hover {
+  background: black;
+  color: white;
+}
+
+main > p > button {
+  width: 170px;
+  height: 40px;
+  background: transparent;
+  border: solid 4px black;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+main > p > button:hover {
+  background: black;
+  color: white;
+}
+
+/* BUILDING-CONTAINER */
+
+.building-container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+}
+
+.years-building {
+  padding: 1.5rem;
+  width: 30%;
+  height: 100%;
+  color: white;
+  background: rgb(35, 36, 37);
+}
+
+.years-building > p:first-child {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2.5rem 0 3rem 0;
+}
+
+.years-building > p:nth-child(2) {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.years-building > button {
+  width: 170px;
+  height: 40px;
+  color: var(--thistle);
+  border: solid 4px thistle;
+  background: transparent;
+}
+
+.building-video {
+  width: 70%;
+  height: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(10 1fr); */
+  grid-template-rows: 85% 15%;
+}
+
+.video {
+  background: black;
+}
+
+ .video > video {
+    max-width: 100%;
+    max-height: 100%;
+    border: 0; 
+} 
+
+.call-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.call-quote {
+  width: 50%;
+  height: 100%;
+  background: var(--thistle);
+  color: var(--black);
+  padding: 1rem;
+  
+}
+
+.call-quote > p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 .5rem 0;
+}
+
+
+.online-form {
+  width: 50%;
+  text-align: center;
+}
+
+.online-form > p {
+  padding: .3rem;
+  width: 270px;
+  font-weight: bold;
+  border: solid 4px black;
+  margin: 1.5rem auto;
+}
+
+/* ASIDE */
+
+aside {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--light);
+}
+
+.lets-build {
+  max-width: 40%;
+  padding: 5rem;
+}
+
+.lets-build > p:first-child {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 3rem 0;
+}
+
+.lets-build > p:nth-child(2) {
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
+}
+
+.lets-build > button {
+  width: 170px;
+  height: 45px;
+  background: transparent;
+  cursor: pointer;
+  color: purple;
+  border: solid 4px thistle;
+}
+
+.lets-build-right {
+  width: 60%;
+}
+
+.build-right-container {
+  max-width: 550px ;
+  height: 400px;
+  background: white;
+  margin: 5rem 0 0 0;
+  padding: 2rem 0 0 1rem;
+}
+
+.lets-build-right > .build-right-container > p:first-child {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.build-right-container > p > .fa-plus-circle {
+  float: right;
+  margin: 0 1rem 0 0;
+  color: var(--thistle);
+}
+
+.build-right-container > p:nth-child(2) {
+  color: lightslategray;
+  margin-bottom: 2rem;
+}
+
+.plus {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* CLIENT */
+
+.client-container {
+  background: var(--light);
+  padding-top: 5rem;
+}
+
+.client-container > p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.client-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  /* margin-bottom: 2rem; */
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  background: white;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.box > .stars {
+  margin: 0 0 2rem 3rem;
+}
+
+.box > .stars > i {
+  text-align: center;
+  margin: 0;
+  color: var(--thistle);
+}
+
+.box > p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* SPONSORS */
+
+.sponsors {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background: var(--light);
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* gap: 2rem; */
+
+}
+
+.sponsors > .first-sponsors > .fa-brands {
+  color: lightslategray;
+  margin: 1rem 3rem 0 3rem;
+}
+
+.sponsors > .second-sponsors > .fa-brands {
+  color: lightslategray;
+  margin: 0 3rem 0 3rem;
+  
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  display: flex;
+}
+
+.contact-us {
+  width: 50%;
+  padding: 3rem;
+  background: var(--thistle);
+}
+
+.contact-us > p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+}
+
+.contact-us > label {
+  width: 100%;
+}
+
+.contact-us > label > input {
+  width: 210px;
+  height: 40px;
+  margin-bottom: 1rem;
+  border: 0;
+  
+}
+
+.contact-us > label > input:nth-child(2) {
+  float: right;
+  
+}
+
+.contact-us > textarea{
+  width: 100%;
+  border: 0;
+}
+
+:placeholder-shown {
+  padding: 10px;
+}
+
+.contact-us > button {
+  float: right;
+  width: 170px;
+  height: 35px;
+  border: solid 4px white;
+  color: white;
+  background: transparent;
+  margin-top: 1rem;
+}
+
+.location {
+  width: 50%;
+}
+
+.location > .social-media {
+  background: rgb(35, 36, 37);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.location > .social-media > .fa-brands:hover {
+cursor: pointer;
+border-bottom: 3px solid white;
+}
+
+.address {
+  padding: 1.5rem;
+}
+
+.address > p > .fa-solid {
+  color: lightslategray;
+  margin: 0 .5rem 0 0;
+}
+
+.address > p {
+  margin: 1rem 0 0 1.5rem;
+}
+
+
+
+ 

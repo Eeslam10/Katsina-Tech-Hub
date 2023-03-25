@@ -156,6 +156,13 @@ nav {
   color: var(--black);
 }
 
+.program > button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+
+}
+
 .our-services {
   width: 30%;
   height: 100%;
@@ -214,9 +221,18 @@ article > p.get-in-t > button {
   width: 170px;
   background: transparent;
   color: var(--thistle);
-  border: solid 1px lightslategray;
+  border: solid 4px thistle;
   /* box-shadow: 1px 1px 1px 1px; */
 }
+
+article > p.get-in-t > button:hover {
+  background: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+
+}
+
 
 /* SECTION */
 
@@ -280,8 +296,16 @@ section {
   font-weight: bold;
 } 
 
+.no-project > .project-text >.project-second-text > button:hover {
+  background: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+
+}
+
 .years-completed {
-  background: red;
+  /* background: red; */
   display: flex;
 } 
 
@@ -400,6 +424,8 @@ main > p {
 .project-title > button:hover {
   background: black;
   color: white;
+  cursor: pointer;
+
 }
 
 main > p > button {
@@ -414,6 +440,8 @@ main > p > button {
 main > p > button:hover {
   background: black;
   color: white;
+  cursor: pointer;
+
 }
 
 /* BUILDING-CONTAINER */
@@ -449,6 +477,14 @@ main > p > button:hover {
   color: var(--thistle);
   border: solid 4px thistle;
   background: transparent;
+}
+
+.years-building > button:hover {
+  background: white;
+  color: black;
+  border: 0;
+  cursor: pointer;
+
 }
 
 .building-video {
@@ -505,6 +541,12 @@ main > p > button:hover {
   margin: 1.5rem auto;
 }
 
+.online-form > p:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
 /* ASIDE */
 
 aside {
@@ -537,6 +579,13 @@ aside {
   cursor: pointer;
   color: purple;
   border: solid 4px thistle;
+}
+
+.lets-build > button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: 0;
 }
 
 .lets-build-right {
@@ -696,6 +745,13 @@ footer {
   margin-top: 1rem;
 }
 
+.contact-us > button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
 .location {
   width: 50%;
 }
@@ -715,7 +771,7 @@ border-bottom: 3px solid white;
 }
 
 .address {
-  padding: 1.5rem;
+  padding: 0 0 0 5rem;
 }
 
 .address > p > .fa-solid {
@@ -724,7 +780,7 @@ border-bottom: 3px solid white;
 }
 
 .address > p:first-child {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 0 1.4rem;
 }
 .address > p {
   margin: 1rem 0 0 1.5rem;
